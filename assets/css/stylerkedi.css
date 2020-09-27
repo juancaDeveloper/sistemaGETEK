@@ -1,0 +1,112 @@
+.rkediloader{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/logo-dark.png') 50% 50% no-repeat rgb(249,249,249);
+    background-size: 250px;
+}
+.rkediloader>.fa{
+    position: fixed;
+    left: 47.5%;
+    top: 64%;
+}
+
+.infosys
+.card-body,.infosys
+.card-header{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+}
+.bg-dark {
+    background-color: #122f3b !important;
+}
+nav .dropdown-menu{
+    background-color: #122f3b !important;
+}
+.navbar .navbar-nav.mobile-only-control .nav-item.dropdown .dropdown-menu > .media > a:hover, .navbar .navbar-nav.navbar-notifications .nav-item.dropdown .dropdown-menu > .media > a:hover{
+    background-color: #122f3b !important;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item:hover > a.nav-link{
+    color: #3498DB;
+}
+.navbar .navbar-nav .nav-item .dropdown-menu a{
+    color: #fff !important;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu a:hover{
+    color: #000 !important;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item:hover > a.nav-link > .fas{
+    color: #3498DB !important;
+}
+.profile-picture-md
+{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+.profile-picture.profile-picture-md img{
+    width: 94px;
+    height: 94px;
+    margin: 1px auto 0;
+    border: 5px solid #fff;
+}
+.datepicker table tr td span.focused, .datepicker table tr td span:hover {
+    background-color: #85C1E9;
+    color: #fff;
+}
+.datepicker table tr td.today{
+    color: #fff;
+    background-color: #85C1E9;
+    border-color: #5DADE2;
+}
+.datepicker table tr td.day:hover, .datepicker table tr td.focused {
+    background-color: rgb(192, 226, 250);
+    color: #3498DB;
+    cursor: pointer;
+}
+.datepicker table tr td span.active.active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.today:active:hover,
+    .datepicker table tr td.today:hover{
+    color: #fff;
+    background-color: #3498DB;
+    border-color: #3498DB;
+}
+.datepicker .datepicker-switch, .datepicker .next, .datepicker .prev, .datepicker tfoot tr th {
+    cursor: pointer;
+    background-color: #3498DB;
+    color: #fff;
+}
+
+.datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker tfoot tr th:hover {
+    background-color: #85C1E9;
+    color: #3498DB;
+}
+.dataTables_wrapper .dt-buttons {
+    float:right;  
+    text-align:center;
+    font-size:12px;
+}
+.toast-message,.toast-title{
+    font-size: 15px;
+}
+
+.btn{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.fa-ban{
+    color:red;
+}
+.table td, .table th {
+    vertical-align: middle;
+}
