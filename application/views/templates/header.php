@@ -76,7 +76,8 @@
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 	
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	
 	<script type="text/javascript" src="<?php echo base_url("assets/js/sacppv.js"); ?>"></script>
 
 
