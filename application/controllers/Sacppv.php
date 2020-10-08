@@ -5,6 +5,11 @@ class Sacppv extends CI_Controller
     {
         parent::__construct();
 
+        if(!$this->session->userdata("login")){
+
+            redirect(base_url());
+        } 
+
         $this->load->helper(array('form', 'url'));
         $this->load->library('form_validation');
 
@@ -13,13 +18,12 @@ class Sacppv extends CI_Controller
         
    
     }
-
-
-    public function inicio(){
+   
+    
+    public function dashboard(){
 
         $this->load->view('templates/header');
         $this->load->view('templates/menu');
-        $this->load->view('pages/inicio');
 
         $this->load->view('templates/footer');
 
@@ -83,6 +87,90 @@ class Sacppv extends CI_Controller
     }
    }
 
+
+   public function eliminar(){
+
+    if($this->input->is_ajax_request()){
+        $del_id= $this->input->post('del_id');
+
+      if(  $this->crud_model->delete_entry($del_id)){
+
+        $data=array('responce'=>'success');
+
+      }else{
+
+        $data=array('responce'=>'error');
+       
+      }
+
+    }
+
+    echo json_encode($data);
+    
+
+
+   }
+
+
+   public function editar(){
+
+   if($this->input->is_ajax_request()){
+       $edit_id = $this->input->post('edit_id');
+      if( $post = $this->crud_model->single_entry($edit_id)){
+          
+        $data = array('responce' => "success",'post'=> $post);
+
+
+
+      } else{
+          $data =array('responce'=>"error",'message'=>'fallo');
+      }
+   }
+
+   echo  json_encode($data);
+
+
+   }
+ 
+
+
+
+ public function modificar(){
+
+
+    if($this->input->is_ajax_request()){
+
+        $this->form_validation->set_rules('edit_name', 'Nombre', 'required');
+        $this->form_validation->set_rules('edit_email', 'Email', 'required|valid_email');
+
+        if ($this->form_validation->run() == FALSE)
+        {
+                $data =array('responce'=>'error','message'=>validation_errors());
+        }
+        else
+        {
+
+             $data ['id']= $this->input->post('edit_id');
+             $data ['nombre']= $this->input->post('edit_name');
+             $data ['email']= $this->input->post('edit_email');
+            
+             if($this->crud_model->update_entry($data)){
+
+                $data =array('responce'=>'success','message'=> 'Datos Añadidos Ok');
+             } else {
+                $data =array('responce'=>'success','message'=> 'Datos Nooo añadidos');
+             }
+        }
+
+    } else{
+        echo "No direct script access alolowed";
+    }
+
+    echo json_encode($data);
+
+  }
+
+    
 
 
 

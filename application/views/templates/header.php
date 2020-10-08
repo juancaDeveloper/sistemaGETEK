@@ -13,8 +13,8 @@
 	<!-- <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap/bootstrap.min.css"); ?>"> -->
 	<link rel="stylesheet" href="<?php echo base_url("assets/fonts/batch-icons/css/batch-icons.css"); ?>">
 	
-
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	
 
 	<link rel="stylesheet" href="<?php echo base_url("assets/plantilla/bootstrap/dist/css/bootstrap.min.css"); ?>">
   <!-- Font Awesome -->
@@ -58,7 +58,7 @@
 
    <link  rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
-	<!-- <link rel="stylesheet" href="<?php echo base_url("assets/fonts/font-awesome/css/font-awesome.min.css"); ?>"> -->
+ <link rel="stylesheet" href="<?php echo base_url("assets/fonts/font-awesome/css/font-awesome.min.css"); ?>"> 
 	
 
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/stylerkedi.css"); ?>">
@@ -77,6 +77,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 	
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	
 	
 	<script type="text/javascript" src="<?php echo base_url("assets/js/sacppv.js"); ?>"></script>
 
