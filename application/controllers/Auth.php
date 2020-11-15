@@ -16,11 +16,11 @@ class Auth extends CI_Controller{
 
         if($this->session->userdata("login")){
 
-            redirect(base_url()."dashboard");
+            redirect(base_url()."panel");
         } else{
 
-            $this->load->view('templates/header');
-        $this->load->view('login');
+            
+            $this->load->view('paginas/login2');
 
 
         }
@@ -50,7 +50,7 @@ class Auth extends CI_Controller{
                 'login' => TRUE
             );
             $this->session->set_userdata($data);
-            redirect(base_url()."dashboard");
+            redirect(base_url()."panel");
 
         }
 
